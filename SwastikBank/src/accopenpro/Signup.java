@@ -3,8 +3,6 @@ package accopenpro;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import java.sql.*;
-
 import com.toedter.calendar.JDateChooser;
 import java.util.*;
 import javax.swing.border.LineBorder;
@@ -25,12 +23,12 @@ public class Signup extends JFrame implements ActionListener {
 
         setTitle("NEW ACCOUNT APPLICATION FORM");
 
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("bankmanagement/icon/logo.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT);
-        ImageIcon i3 = new ImageIcon(i2);
-        JLabel l11 = new JLabel(i3);
-        l11.setBounds(20, 0, 100, 100);
-        add(l11);
+//        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("bankmanagement/icon/logo.jpg"));
+//        Image i2 = i1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT);
+//        ImageIcon i3 = new ImageIcon(i2);
+//        JLabel l11 = new JLabel(i3);
+//        l11.setBounds(20, 0, 100, 100);
+//        add(l11);
 
         l1 = new JLabel("APPLICATION FORM NO. " + first);
         l1.setFont(new Font("Raleway", Font.BOLD, 38));
@@ -227,6 +225,7 @@ public class Signup extends JFrame implements ActionListener {
         setVisible(true);
     }
 
+    @Override
     public void actionPerformed(ActionEvent ae) {
 
         String formno = first;
